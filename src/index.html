@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>LAKTASI</title>
+    <script src="https://kit.fontawesome.com/1b92de2067.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Mooli&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body class="bg-[#f0f0f0] relative overflow-hidden">
+    <section class="move hide">
+        <div class=""></div>
+    </section>
+    <!-- startPage -->
+    <section id="start-page" class="flex flex-col justify-center items-center h-screen hide">
+        <h1 class="text-[#4d4d4d] font-bold font-poppins text-6xl">konseling laktasi</h1>
+        <p class="text-[#343434] font-poppins text-lg mt-5">pelajari bagaimana laktasi memainkan peran essensial dalam
+            pertumbuhan anak</p>
+        <a id="button-startPage"
+            class="cursor-pointer mt-5 relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-[#ff7070] rounded-full shadow-md group">
+            <span
+                class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#ff7070] group-hover:translate-x-0 ease">
+                <span class="text-lg">
+                    <i class="fa-solid fa-book-medical mr-5"></i>
+                </span>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                    </path>
+                </svg>
+            </span>
+            <span
+                class="absolute flex items-center justify-center w-full h-full text-[#ff7070] transition-all duration-300 transform group-hover:translate-x-full ease">Pelajari</span>
+            <span class="relative invisible">Button Text</span>
+        </a>
+    </section>
+
+    <!-- navbar -->
+    <nav id="navbar" class="flex flex-col justify-center bg-[#e5e5e5] h-screen w-[78px] fixed z-20">
+        <div id="introduction-logo" class="cursor-pointer hover:bg-[#f0f0f0]/85 nav-active">
+            <img class="" src="./img/introduction-logo.svg" alt="">
+        </div>
+        <div id="main-logo" class="cursor-pointer p-4 text-4xl hover:bg-[#f0f0f0]/85">
+            <i class="fa-solid fa-book-open"></i>
+        </div>
+        <div id="video-logo" class="cursor-pointer p-4 text-4xl hover:bg-[#f0f0f0]/85">
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <a class="cursor-pointer github-box p-4 bg-[#333] absolute bottom-0" href="https://github.com/rhyssh"
+            target="_blank">
+            <img class="github-icon " src="./img/GitHub-Mark-Light-120px-plus.png" alt="github icon">
+        </a>
+    </nav>
+
+    <section class="move2 hide">
+        <div class=""></div>
+    </section>
+
+    <!-- introduction page -->
+    <section id="introduction-page" class="ml-[78px] h-screen overflow-hidden relative ">
+
+        <!-- pengertian -->
+        <div id="pengertian-container">
+            <div id="pengertian-content" class="h-screen flex items-center justify-around ">
+                <div id="gambar-pengertian" class="bg-[#ffffff] flex justify-center items-center w-[56vw] h-screen">
+                    <div>
+                        <img src="img/laktasi-logo-2.svg" class="" alt="">
+                    </div>
+                </div>
+                <div class="bg-[#f0f0f0] w-[46vw] h-screen pt-20 ">
+                    <div class="w-[85%] relative ">
+                        <div
+                            class="bg-[#ff7070] w-[110%] text-white -ml-[5vw] pt-[4vh] pr-[18%] pb-[4vh] pl-[12%] mb-[8vh]">
+                            <h2 class="font-poppins text-3xl font-semibold">Apa Itu Laktasi ?</h2>
+                        </div>
+                        <ul class="pl-24">
+                            <li
+                                class="before:text-[#4b99e5] text-[700] before:-ml-[1em] before:content-['\25a0'] font-poppins text-lg text-[#343434] font-[400] text-justify">
+                                proses produksi asi (air susu ibu) yang kemudian dikeluarkan melalui kelenjar payudara
+                                dan
+                                digunakan untuk sumber nutrisi utama bayi pada masa awal pertumbuhan. </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- eksplorasi -->
+        <div id="eksplorasi-container">
+            <div id="eksplorasi-content" class="h-screen flex  justify-center hide">
+                <div class="mt-[3vh] flex flex-col">
+                    <div class="bg-[#ff7070]  text-white px-[2vw] py-[2vh] text-center">
+                        <h2 class="font-poppins text-3xl font-semibold">Eksplorasi</h2>
+                        <p></p>
+                    </div>
+
+                    <div id="gambar-eksplorasi" class="flex">
+                        <div class="relative">
+                            <!-- pendapat pasien -->
+                            <div id="pendapat-pasien"
+                                class="hide absolute -left-[2vw] top-[10vh] bg-[#ffffff] py-[2vh] px-[3vw] drop-shadow-lg rounded-full">
+                                <p class="font-poppins  font-semibold text-[#343434]">Minta Pasien Menceritakan
+                                    Kesulitan</p>
+                            </div>
+
+                            <!-- gangguan pasien -->
+                            <div id="gangguan-pasien"
+                                class="hide absolute -left-[2vw] top-[10vh] bg-[#ffffff] py-[2vh] px-[3vw] drop-shadow-lg rounded-full">
+                                <p class="font-poppins  font-semibold text-[#343434]">minta pasien memperagakan posisi
+                                    menyusui yang biasa ia lakukan</p>
+                            </div>
+                            <img src="img/eksplorasi-1.svg" alt="">
+                        </div>
+                        <div class="relative">
+                            <!-- pendapat dokter -->
+                            <div id="pendapat-dokter"
+                                class="absolute   -right-[2vw] top-[10vh] bg-[#ffffff] py-[2vh] px-[3vw] drop-shadow-lg">
+                                <h3 class="font-poppins text-2xl font-semibold text-[#343434]">1. Pendapat</h3>
+                                <div class="transition-all">
+                                    <p id="text-pendapat-dokter" class=" hide text-lg font-mooli">“Apakah menurut ibu
+                                        menyusui bayi itu
+                                        sulit?”
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- persepsi -->
+                            <div id="persepsi-dokter"
+                                class="absolute -left-[2vw] bottom-[30vh] bg-[#ffffff] py-[2vh] px-[3vw] drop-shadow-lg">
+                                <h3 class="font-poppins text-2xl font-semibold text-[#343434]">2. Persepsi</h3>
+                                <div class="transition-all">
+                                    <p id="text-persepsi-dokter" class=" hide text-lg font-mooli">“Menurut ibu, seberapa
+                                        penting menyusui bayi?”
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- gangguan -->
+                            <div id="gangguan-dokter"
+                                class="absolute -right-[2vw] bottom-[10vh] bg-[#ffffff] py-[2vh] px-[3vw] drop-shadow-lg">
+                                <h3 class="font-poppins text-2xl font-semibold text-[#343434]">2. Hendaya</h3>
+                                <div class="transition-all">
+                                    <p id="text-gangguan-dokter" class=" hide text-lg font-mooli">“selama menyusui ini
+                                        apakah Kesulitan yang ibu alami dalam menyusui?”
+                                    </p>
+                                </div>
+                            </div>
+                            <img src="img/eksplorasi-2.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="absolute bottom-10 link gerak left-[50%]">
+            <div class="flex flex-col">
+                <p id="text-buttonIntro" class="font-semibold font-poppins">Lanjut</p>
+                <button id="buttonIntro-nextpage"
+                    class="text-lg bg-[#f0f0f0] rounded-full py-2 mt-2 hover:bg-[#b4b4b4]">
+                    <i id="icon-next" class="fa-solid fa-arrow-down"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- main-page -->
+    <section id="main-page" class="ml-[78px] p-20 ">
+        <div class="flex items-center justify-center">
+            <h1 class="font-poppins text-2xl font-semibold text-[#343434]">Ini Halaman Utama</h1>
+        </div>
+    </section>
+    <section id="video-page" class="ml-[78px] p-20 ">
+        <h1 class="font-poppins text-2xl font-semibold text-[#343434]">Ini Halaman Video</h1>
+    </section>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="index.js"></script>
+
+</html>
