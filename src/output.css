@@ -646,10 +646,6 @@ video {
   display: inline-flex;
 }
 
-.hidden {
-  display: none;
-}
-
 .h-6 {
   height: 1.5rem;
 }
@@ -1016,7 +1012,7 @@ video {
 }
 
 .move {
-  z-index: 10;
+  z-index: 21;
 }
 
 .move2 {
