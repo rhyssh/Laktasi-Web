@@ -65,3 +65,7 @@
 .move2 {
 	z-index: 4;
 }
+
+.active{
+  background-color:#d35a5a;
+}

@@ -20,7 +20,7 @@
         <div class=""></div>
     </section>
     <!-- startPage -->
-    <section id="start-page" class="flex flex-col justify-center items-center h-screen ">
+    <section id="start-page" class="flex flex-col justify-center items-center h-screen hide">
         <h1 class="text-[#4d4d4d] font-bold font-poppins text-6xl">konseling laktasi</h1>
         <p class="text-[#343434] font-poppins text-lg mt-5">pelajari bagaimana laktasi memainkan peran essensial dalam
             pertumbuhan anak</p>
@@ -44,7 +44,7 @@
     </section>
 
     <!-- navbar -->
-    <nav id="navbar" class="flex flex-col justify-center bg-[#e5e5e5] h-screen w-[78px] fixed z-20 hide">
+    <nav id="navbar" class="flex flex-col justify-center bg-[#e5e5e5] h-screen w-[78px] fixed z-20 ">
         <div id="introduction-logo" class="cursor-pointer hover:bg-[#f0f0f0]/85 nav-active">
             <img class="" src="./img/introduction-logo.svg" alt="">
         </div>
@@ -65,7 +65,7 @@
     </section>
 
     <!-- introduction page -->
-    <section id="introduction-page" class="ml-[78px] h-screen overflow-hidden relative hide">
+    <section id="introduction-page" class="ml-[78px] h-screen overflow-hidden relative ">
 
         <!-- pengertian -->
         <div id="pengertian-container">
@@ -161,7 +161,7 @@
         </div>
 
 
-        <div class="absolute bottom-10 link gerak left-[50%]">
+        <div class="absolute bottom-0 link gerak left-[50%]">
             <div class="flex flex-col">
                 <p id="text-buttonIntro" class="font-semibold font-poppins">Lanjut</p>
                 <button id="buttonIntro-nextpage"
@@ -169,18 +169,346 @@
                     <i id="icon-next" class="fa-solid fa-arrow-down"></i>
                 </button>
             </div>
+
         </div>
     </section>
 
 
     <!-- main-page -->
-    <section id="main-page" class="ml-[78px] p-20 ">
-        <div class="flex items-center justify-center">
-            <h1 class="font-poppins text-2xl font-semibold text-[#343434]">Ini Halaman Utama</h1>
+    <section id="main-page" class="ml-[78px]  relative h-screen hide">
+
+        <!-- benefit -->
+        <div id="benefit-container">
+            <div id="benefit-content" class="flex flex-col items-center justify-center pt-5 ">
+                <h1 class="font-poppins text-2xl font-semibold text-[#ffffff] bg-[#ff7070] px-[3vw] py-[2vh]">Tujuan dan
+                    keuntungan laktasi</h1>
+                <div class="flex mt-5 gap-5 text-xl font-poppins font-semibold text-white">
+                    <p id="ibu-btn" class="bg-[#ff7070] px-[1vw] py-[1vh] cursor-pointer hover:bg-[#d35a5a] active">
+                        Ibu</p>
+                    <p id="bayi-btn" class="bg-[#ff7070] px-[1vw] py-[1vh] cursor-pointer hover:bg-[#d35a5a] ">Bayi</p>
+                </div>
+
+                <div id="bayi" class=" text-center transition ease-in-out delay-400 relative">
+                    <div id="bayi-bungkus">
+                        <img src="img/ibu-benefit.svg" alt="">
+
+                        <div class="absolute top-[3vh] -left-[8vw] bg-[#ffffff] ">
+                            <h3 class="font-poppins text-lg  font-semibold px-[2vw] py-[2vh]">1. Meningkatkan sistem
+                                imun
+                                ibu
+                            </h3>
+                        </div>
+                        <div class="absolute top-[15vh] -right-[6vw] bg-[#ffffff] ">
+                            <h3 class="font-poppins text-lg  font-semibold px-[2vw] py-[2vh]">2. Mengurangi stres ibu
+                            </h3>
+                        </div>
+                        <div class="absolute top-[40vh] -left-[6vw] bg-[#ffffff] ">
+                            <h3 class="font-poppins text-lg  font-semibold px-[2vw] py-[2vh]">3. Menurunkan risiko
+                                perdarahan postpartum dan anemia
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div id="ibu" class=" hide transition ease-in-out delay-400">
+                    <div id="ibu-bungkus">
+                        <img src="img/bayi-benefit.svg" alt="">
+
+                        <div class="absolute top-[3vh] -left-[8vw] bg-[#ffffff] ">
+                            <h3 class="font-poppins text-lg  font-semibold px-[2vw] py-[2vh]">1. Mencegah infeksi dan
+                                penyakit umum
+
+
+                            </h3>
+                        </div>
+                        <div class="absolute top-[15vh] -right-[6vw] bg-[#ffffff] ">
+                            <h3 class="font-poppins text-lg  font-semibold px-[2vw] py-[2vh]">2. menJalin hubungan
+                                emosional
+                                ibu-bayi yang baik
+
+                            </h3>
+                        </div>
+                        <div class="absolute top-[40vh] -left-[6vw] bg-[#ffffff] ">
+                            <h3 class="font-poppins text-lg  font-semibold px-[2vw] py-[2vh]">3. Meningkatkan
+                                perkembangan
+                                mulut yang sehat
+                                penyakit umum
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <!-- perlekatan yang benar -->
+        <div id="lekat-container">
+            <div id="lekat-content" class="flex flex-col items-center justify-center pt-[3vh] hide">
+                <h1 class="font-poppins text-2xl font-semibold text-[#ffffff] bg-[#ff7070] px-[3vw] py-[2vh]">Perlekatan
+                    yang benar</h1>
+                <div id="lekat-gambar" class="flex px-[5vw]">
+                    <div class="relative">
+                        <div id="title-lekat1" class="absolute top-[5vh]  bg-[#ffffff]">
+                            <h3 class="text-lg font-semibold px-[2vw] py-[2vh]">1. Front hold</h3>
+                        </div>
+                        <img src="img/lekat-1.svg" alt="">
+                    </div>
+                    <div class="relative">
+                        <div id="title-lekat2" class="absolute  bg-[#ffffff] top-[5vh]">
+                            <h3 class="text-lg font-semibold px-[2vw] py-[2vh]">2. Underarm position</h3>
+                        </div>
+                        <img src="img/lekat-2.svg" alt="">
+                    </div>
+                    <div class="relative">
+                        <div id="title-lekat2" class="absolute  bg-[#ffffff] top-[5vh]">
+                            <h3 class="text-lg font-semibold px-[2vw] py-[2vh]">3. Lying position</h3>
+                        </div>
+                        <img src="img/lekat-2.svg" alt="">
+                    </div>
+                </div>
+                <div id="lekat-teks-container" class="flex justify-center items-center -mt-[5vh]">
+                    <div id="lekat-teks-title">
+                        <h3 class="font-poppins text-base text-[#343434] font-[400] text-justify">ketika menggunakan
+                            posisi 1 dan 2 (dengan duduk) disarankan:
+                        </h3>
+                    </div>
+                    <div id="lekat-teks" class=" ">
+                        <ul class="pl-24">
+                            <li
+                                class="before:text-[#4b99e5] text-[700] before:-ml-[1em] before:content-['\25a0'] font-poppins text-base text-[#343434] font-[400] text-justify">
+                                menyusui di kursi yang memiliki sandaran punggung yang baik
+
+                            </li>
+                            <li
+                                class="before:text-[#4b99e5] text-[700] before:-ml-[1em] before:content-['\25a0'] font-poppins text-base text-[#343434] font-[400] text-justify">
+                                menggunakan bantalan untuk menopang lengan ibu
+
+                            </li>
+                            <li
+                                class="before:text-[#4b99e5] text-[700] before:-ml-[1em] before:content-['\25a0'] font-poppins text-base text-[#343434] font-[400] text-justify">
+                                kaki menumpu pada lantai atau alas lainnya, lutut boleh sedikit dinaikkan
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- cara menyusui dengan benar -->
+        <div id="susui-container">
+            <div id="susui-content" class="flex flex-col items-center justify-center pt-[3vh] hide">
+                <h1 class="font-poppins text-2xl font-semibold text-[#ffffff] bg-[#ff7070] px-[3vw] py-[2vh]">Cara
+                    menyusui dengan benar</h1>
+
+
+                <!-- 1 -->
+                <div id="susui-img" class="relative">
+                    <div id="title-lekat1"
+                        class="absolute top-[14vh] -left-[16vw] backdrop-blur-sm bg-white/30 bg-[#ffffff] rounded-full hover:bg-[#ffffff] hover:cursor-pointer z-30">
+                        <h3 class="text-lg font-semibold px-[2vw] py-[2vh]">1. <span id="teks-lekat1"
+                                class="font-poppins text-base text-[#343434] font-[400] text-justify ">Preparasi
+                                puting <br> dengan mengoleskan asi pada puting</span>
+                        </h3>
+                    </div>
+
+                    <!-- 2 -->
+                    <div id="title-lekat2"
+                        class="absolute top-[5vh] left-[8vw] backdrop-blur-sm bg-white/30 bg-[#ffffff] rounded-full hover:bg-[#ffffff] hover:cursor-pointer z-30">
+                        <h3 class="text-lg font-semibold px-[2vw] py-[2vh]">2. <span id="teks-lekat2"
+                                class="font-poppins text-base text-[#343434] font-[400] text-justify">Meletakan bayi
+                                menghadap ke arah ibu</span>
+                        </h3>
+                    </div>
+
+                    <!-- 3 -->
+                    <div id="title-lekat3"
+                        class="absolute top-[18vh] -right-[20vw] backdrop-blur-sm bg-white/30 bg-[#ffffff] rounded-full hover:bg-[#ffffff] hover:cursor-pointer z-30">
+                        <h3 class="text-lg font-semibold px-[2vw] py-[2vh]">3. <span id="teks-lekat3"
+                                class="font-poppins text-base text-[#343434] font-[400] text-justify ">Memegang bayi
+                                dengan 1 tangan, <br>meletakan kepala bayi pada lipatan siku ibu</span>
+                        </h3>
+                    </div>
+
+                    <!-- 4 -->
+                    <div id="title-lekat4"
+                        class="absolute bottom-[20vh] -left-[20vw] backdrop-blur-sm bg-white/30  bg-[#ffffff] rounded-full hover:bg-[#ffffff] hover:cursor-pointer z-30">
+                        <h3 class="text-lg font-semibold px-[2vw] py-[2vh]">4. <span id="teks-lekat4"
+                                class="font-poppins text-base text-[#343434] font-[400] text-justify ">Meletakan 1
+                                tangan bayi pada bawah ketiak ibu,<br> 1 tangan di depan ibu</span>
+                        </h3>
+                    </div>
+
+                    <!-- 5 -->
+                    <div id="title-lekat5"
+                        class="absolute bottom-[5vh] left-[5vw] backdrop-blur-sm bg-white/30  bg-[#ffffff] rounded-full hover:bg-[#ffffff] hover:cursor-pointer z-30">
+                        <h3 class="text-lg font-semibold px-[2vw] py-[2vh]">5. <span id="teks-lekat5"
+                                class="font-poppins text-base text-[#343434] font-[400] text-justify ">Mengarahkan agar
+                                mempertahankan kontak mata ibu dengan bayi</span>
+                        </h3>
+                    </div>
+
+                    <!-- 6 -->
+                    <div id="title-lekat6"
+                        class="absolute bottom-[20vh] -right-[25vw] backdrop-blur-sm bg-white/30 bg-[#ffffff] rounded-full hover:bg-[#ffffff] hover:cursor-pointer z-30">
+                        <h3 class="text-lg font-semibold px-[2vw] py-[2vh]">6. <span id="teks-lekat6"
+                                class="font-poppins text-base text-[#343434] font-[400] text-justify ">Mengarahkan wajah
+                                bayi menghadap puting ibu,<br> dengan posisi puting diantara hidung dan mulut
+                                bayi</span>
+                        </h3>
+                    </div>
+
+
+                    <img class="-rotate-45" src="img/susui.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- kondisi -->
+        <div id="kondisi-container">
+            <div id="kondisi-content" class="h-screen flex items-center justify-around hide">
+                <div id="gambar-kondisi" class="bg-[#ffffff] flex justify-center items-center w-[56vw] h-screen">
+                    <div>
+                        <img src="img/kondisi-img.svg" class="" alt="">
+                    </div>
+                </div>
+                <div class="bg-[#f0f0f0] w-[46vw] h-screen pt-20 ">
+                    <div class="w-[85%] relative ">
+                        <div
+                            class="bg-[#ff7070] w-[110%] text-white -ml-[5vw] pt-[4vh] pr-[18%] pb-[4vh] pl-[12%] mb-[8vh]">
+                            <h2 class="font-poppins text-3xl font-semibold">Cara menilai kondisi payudara ibu ?</h2>
+                        </div>
+                        <ul class="pl-24">
+                            <li
+                                class="before:text-[#4b99e5] text-[700] before:-ml-[1em] before:content-['\25a0'] font-poppins text-lg text-[#343434] font-[400] text-justify">
+                                <strong>normalnya payudara</strong> ibu menyusui akan <strong>terasa lembut</strong>
+                                atau lunak <strong>setelah</strong> mingu <strong>minggu pertama melahirkan</strong>
+                                .
+                            </li>
+                            <li
+                                class="before:text-[#a3739b] text-[700] before:-ml-[1em] before:content-['\25a0'] font-poppins text-lg text-[#343434] font-[400] text-justify">
+                                <strong>payudara membengkak (terasa keras)</strong> -> karena payudara jarang
+                                dikosongkan sehingga
+                                terjadi bendungan, menyebabkan rasa sesak di payudara jika tidak diatasi bisa berkembang
+                                menjadi mastitis. mastitis bisa berkembang menjadi abses payudara.
+                            </li>
+                            <li
+                                class="before:text-[#ff4c4d] text-[700] before:-ml-[1em] before:content-['\25a0'] font-poppins text-lg text-[#343434] font-[400] text-justify">
+                                <strong>puting nyeri bahkan pecah-pecah</strong> -> karena bayi menarik-narik puting ibu
+                                saat menyusu
+                                atau akibat tekanan yang kuat pada puting susu karena posisi perlekatan yang salah.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- masalah pada susu-->
+        <div id="masalah-container">
+            <div id="masalah-content" class="flex flex-col items-center justify-center pt-[3vh] hide">
+                <h1 class="font-poppins text-2xl font-semibold text-[#ffffff] bg-[#ff7070] px-[3vw] py-[2vh]">Masalah
+                    pada masa menyusui</h1>
+                <div class="flex flex-row items-center justify-evenly">
+                    <div class="flex flex-col">
+
+                        <!-- masistis -->
+                        <div class="relative">
+                            <img class="w-1/2" src="img/susu-1.svg" alt="">
+                            <div id="title-masalah1"
+                                class="absolute backdrop-blur-sm bg-[#ffffff]/30  top-[2vh] hover:bg-[#ffffff] py-[2vh] px-[3vw] drop-shadow-lg">
+                                <h3 class="font-poppins text-2xl font-semibold text-[#343434]">1. Mastitis </h3>
+                                <div class="transition-all">
+                                    <p id="text-teks-masalah1" class=" hide text-lg font-mooli">Payudara meradang,
+                                        perih, bengkak atau merah karena pembengkakan yang tidak tertangani. Apabila
+                                        mastitis tidak tertangani dengan baik, abses payudara dapat terjadi.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- abscess -->
+                        <div class="relative">
+                            <img class="w-1/2" src="img/susu-2.svg" alt="">
+                            <div id="title-masalah2"
+                                class="absolute backdrop-blur-sm bg-[#ffffff]/30  top-0 hover:bg-[#ffffff] py-[2vh] px-[3vw] drop-shadow-lg">
+                                <h3 class="font-poppins text-2xl font-semibold text-[#343434]">2. Abscess</h3>
+                                <div class="transition-all">
+                                    <p id="text-teks-masalah2" class=" hide text-lg font-mooli">benjolan pada payudara
+                                        yang berisi nanah, yang biasanya disebabkan oleh infeksi. paling sering
+                                        disebabkan oleh Staphylococcus aureus, Streptococcus, MRSA, dll.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- pembengkakan payudara -->
+                    <div class="flex flex-col justify-end">
+                        <div class="relative ">
+                            <img class="w-1/2 " src="img/susu-3.svg" alt="">
+                            <div id="title-masalah3"
+                                class="absolute backdrop-blur-sm bg-[#ffffff]/30  top-[2vh] left-[2vw] hover:bg-[#ffffff] py-[2vh] px-[3vw] drop-shadow-lg">
+                                <h3 class="font-poppins text-2xl font-semibold text-[#343434]">3. Pembengkakan Payudara
+                                </h3>
+                                <div class="transition-all">
+                                    <p id="text-teks-masalah3" class=" hide text-lg font-mooli">benjolan pada payudara
+                                        yang berisi nanah, yang biasanya disebabkan oleh infeksi. paling sering
+                                        disebabkan oleh Staphylococcus aureus, Streptococcus, MRSA, dll.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- puting lecet -->
+                        <div class="relative">
+                            <img class="w-1/2" src="img/susu-4.svg" alt="">
+                            <div id="title-masalah4"
+                                class="absolute backdrop-blur-sm bg-[#ffffff]/30  top-[2vh] left-[2vw] hover:bg-[#ffffff] py-[2vh] px-[3vw] drop-shadow-lg">
+                                <h3 class="font-poppins text-2xl font-semibold text-[#343434]">4. Puting lecet
+                                </h3>
+                                <div class="transition-all">
+                                    <p id="text-teks-masalah4" class=" hide text-lg font-mooli">benjolan pada payudara
+                                        yang berisi nanah, yang biasanya disebabkan oleh infeksi. paling sering
+                                        disebabkan oleh Staphylococcus aureus, Streptococcus, MRSA, dll.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="absolute bottom-10 link gerak left-[48%]">
+            <div class="flex gap-5 items-center">
+                <div id="prev-container" class="flex flex-col hide">
+                    <button id="buttonMain-prevpage"
+                        class="text-lg bg-[#f0f0f0] rounded-full py-2 mt-2 hover:bg-[#b4b4b4]">
+                        <i id="icon-previous-main" class="fa-solid fa-arrow-up "></i>
+                    </button>
+                    <p id="text-buttonIntro" class="font-semibold font-poppins">Balik</p>
+                </div>
+                <div id="next-container" class="flex flex-col">
+                    <p id="text-buttonMain" class="font-semibold font-poppins">Lanjut</p>
+                    <button id="buttonMain-nextpage"
+                        class="text-lg bg-[#f0f0f0] rounded-full py-2 mt-2 hover:bg-[#b4b4b4]">
+                        <i id="icon-next-main" class="fa-solid fa-arrow-down"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
     </section>
-    <section id="video-page" class="ml-[78px] p-20 ">
-        <h1 class="font-poppins text-2xl font-semibold text-[#343434]">Ini Halaman Video</h1>
+
+    <section id="video-page" class=" pb-20 flex flex-col items-center justify-center  w-screen h-screen hide">
+            <h2 class="font-poppins font-[600] text-[2.25rem] text-[#333]">Laktasi</h2>
+            <hr class="bg-[#ff7070] w-[196px] h-[8px]">
+            <iframe class="mt-10" width="560" height="315" src="https://www.youtube.com/embed/XZae0tz8RPE?si=z-W-rvhhE89P-DK6"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
     </section>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
